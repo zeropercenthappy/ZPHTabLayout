@@ -1,4 +1,4 @@
-package com.zeropercenthappy.library;
+package com.zeropercenthappy.tablayoutlibrary;
 
 import org.junit.Test;
 
