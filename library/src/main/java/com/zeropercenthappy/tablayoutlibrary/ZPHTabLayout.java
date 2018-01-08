@@ -13,8 +13,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.zeropercenthappy.utilslibrary.ConvertUtils;
-
 /**
  * @author ybq
  * @date 2017/7/13
@@ -34,9 +32,9 @@ public class ZPHTabLayout extends LinearLayout implements View.OnClickListener {
         setGravity(Gravity.CENTER_VERTICAL);
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.ZPHTabLayout);
         textSize = typedArray.getDimensionPixelSize(R.styleable.ZPHTabLayout_textSize,
-                ConvertUtils.sp2px(getContext(), 14));
+                Utils.sp2px(getContext(), 14));
         iconSize = typedArray.getDimensionPixelSize(R.styleable.ZPHTabLayout_iconSize,
-                ConvertUtils.dp2px(getContext(), 30));
+                Utils.dp2px(getContext(), 30));
         innerPadding = typedArray.getDimension(R.styleable.ZPHTabLayout_innerPadding, 0);
         spacingOfIconAndText =
                 typedArray.getDimension(R.styleable.ZPHTabLayout_spacingOfIconAndText, 0);

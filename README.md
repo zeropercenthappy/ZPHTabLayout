@@ -14,7 +14,7 @@ Step 1. Add the JitPack repository to your build file
 Step 2. Add the dependency
 
 	dependencies {
-	        compile 'com.github.zeropercenthappy:ZPHTabLayout:1.0.0'
+	        compile 'com.github.zeropercenthappy:ZPHTabLayout:1.0.2'
 	}
 
 TODO: USAGE
