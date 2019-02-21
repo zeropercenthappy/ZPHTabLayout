@@ -1,20 +1,27 @@
 # ZPHTabLayout
+
 Simple Tablayout. Mostly use for bottom navigation
 
 
-Step 1. Add the JitPack repository to your build file
+## Step 1. Add the JitPack repository to your build file
 
-	allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
+```
+allprojects {
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
 	}
+}
+```
 
-Step 2. Add the dependency
+## Step 2. Add the dependency
 
-	dependencies {
-	        compile 'com.github.zeropercenthappy:ZPHTabLayout:1.0.2'
-	}
+```
+dependencies {
+        implementation 'com.github.zeropercenthappy:ZPHTabLayout:1.0.3'
+}
+```
 
-TODO: USAGE
+## Usage
+
+see sample
