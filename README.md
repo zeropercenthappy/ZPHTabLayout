@@ -18,7 +18,7 @@ allprojects {
 
 ```
 dependencies {
-        implementation 'com.github.zeropercenthappy:ZPHTabLayout:1.0.3'
+        implementation 'com.github.zeropercenthappy:ZPHTabLayout:1.0.4'
 }
 ```
 
