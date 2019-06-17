@@ -6,8 +6,7 @@ import android.util.AttributeSet
 import android.view.Gravity
 import android.view.View
 import android.widget.LinearLayout
-import org.jetbrains.anko.dip
-import org.jetbrains.anko.sp
+import com.zeropercenthappy.utilslibrary.utils.ConvertUtils
 
 class ZPHTabLayout(context: Context, attrs: AttributeSet) : LinearLayout(context, attrs), View.OnClickListener {
     private val textSize: Float
@@ -22,8 +21,8 @@ class ZPHTabLayout(context: Context, attrs: AttributeSet) : LinearLayout(context
         gravity = Gravity.CENTER_VERTICAL
 
         val typedArray = context.obtainStyledAttributes(attrs, R.styleable.ZPHTabLayout)
-        textSize = typedArray.getDimensionPixelSize(R.styleable.ZPHTabLayout_textSize, context.sp(14)).toFloat()
-        iconSize = typedArray.getDimensionPixelSize(R.styleable.ZPHTabLayout_iconSize, context.dip(30)).toFloat()
+        textSize = typedArray.getDimensionPixelSize(R.styleable.ZPHTabLayout_textSize, ConvertUtils.sp2px(context, 14f)).toFloat()
+        iconSize = typedArray.getDimensionPixelSize(R.styleable.ZPHTabLayout_iconSize, ConvertUtils.dp2px(context, 30f)).toFloat()
         innerPadding = typedArray.getDimension(R.styleable.ZPHTabLayout_innerPadding, 0f)
         spacingOfIconAndText = typedArray.getDimension(R.styleable.ZPHTabLayout_spacingOfIconAndText, 0f)
         scaleType = typedArray.getInt(R.styleable.ZPHTabLayout_scaleType, 0)

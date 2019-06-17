@@ -2,7 +2,6 @@ package com.zeropercenthappy.tablayoutsample
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.widget.Toast
 import com.zeropercenthappy.tablayoutlibrary.OnTabSelectListener
 import com.zeropercenthappy.tablayoutlibrary.TabItem
 import kotlinx.android.synthetic.main.activity_main.*
@@ -29,7 +28,7 @@ class MainActivity : AppCompatActivity(), OnTabSelectListener {
     }
 
     override fun onTabSelect(position: Int, tabItem: TabItem): Boolean {
-        Toast.makeText(this,tabItem.tabText,Toast.LENGTH_SHORT).show()
+        tv.text = tabItem.tabText
         return true
     }
 
